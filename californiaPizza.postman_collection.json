@@ -1,0 +1,1204 @@
+{
+	"info": {
+		"_postman_id": "0277956f-a723-411a-98ad-1409a3f87913",
+		"name": "californiaPizza",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localTesting",
+			"item": [
+				{
+					"name": "get item",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/5fa96743b88077075c1ce377",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"5fa96743b88077075c1ce377"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/allItems",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"allItems"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/orders/getOrders/All",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"orders",
+								"getOrders",
+								"All"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update item",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"itemName\":\"Fudge Brownie\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/items/edit/5fa96743b88077075c1ce377",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"edit",
+								"5fa96743b88077075c1ce377"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update deal",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dealName\":\"new deal 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/deals/update/5fad57ad9c8a380d402d20e4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"deals",
+								"update",
+								"5fad57ad9c8a380d402d20e4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add items",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n        \"itemName\":\"fudge browni\",\r\n        \"itemType\": \"sidelines\",\r\n        \"price\":\"250pkr\",\r\n        \"description\":\"bdtuwdoidmkwfk aaadddf\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/items/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get pizzas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/getpizza/pizza",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"getpizza",
+								"pizza"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get lasagna and pasta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/getlasagna&pasta/lasagnapasta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"getlasagna&pasta",
+								"lasagnapasta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get sandwiches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/getsandwiches/sandwich",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"getsandwiches",
+								"sandwich"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get beverages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/getbeverages/beverages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"getbeverages",
+								"beverages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get sidlines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/getsidlines/sideline",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"getsidlines",
+								"sideline"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get desert",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/getdesserts/dessert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"getdesserts",
+								"dessert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get salads",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/getdesserts/dessert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"getdesserts",
+								"dessert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "place order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"City\":\"atd\",\r\n    \"purchasedItems\":[\r\n        \"5fa963a9b88077075c1ce372\"\r\n    ],\r\n\"dealsPurchased\":[\r\n    \"5fad2df210e05c1fa0fdc09d\"\r\n],\r\n\r\n    \"email\":\"saba@gmail.com\",\r\n    \"address\":\"sjhfuwefweifwhfb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/orders/placeOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"orders",
+								"placeOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/delete/5fa96507b88077075c1ce375",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"delete",
+								"5fa96507b88077075c1ce375"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User SignIn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"saba@gmail.com\",\r\n    \"password\":\"test1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/signin/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"signin",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User SignUP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Saba\",\r\n    \"email\":\"saba@gmail.com\",\r\n    \"password\":\"test1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/signup/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"signup",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add deals",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dealType\":\"Lunch\",\r\n    \"dealName\":\"deal 1\",\r\n    \"items\":[\r\n        \"5fa96743b88077075c1ce377\",\r\n        \"5fa9638bb88077075c1ce371\",\r\n        \"5fa95e33278c1320f8e17cee\"\r\n        \r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/deals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"deals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all deals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/deals/getDeals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"deals",
+								"getDeals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get midnight Deals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/deals/getDeals/Midnight",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"deals",
+								"getDeals",
+								"Midnight"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get round the clock deal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/deals/getDeals/RoundTheClock",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"deals",
+								"getDeals",
+								"RoundTheClock"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get lunch deals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/deals/getDeals/Lunch",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"deals",
+								"getDeals",
+								"Lunch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single deal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/deals/single/5fad57ad9c8a380d402d20e4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"deals",
+								"single",
+								"5fad57ad9c8a380d402d20e4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete single deal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/orders/deleteOrder/5fad5286fe00e72a9836ebd9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"orders",
+								"deleteOrder",
+								"5fad5286fe00e72a9836ebd9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single Order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/orders/deleteOrder/5fad5286fe00e72a9836ebd9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"orders",
+								"deleteOrder",
+								"5fad5286fe00e72a9836ebd9"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Deployed Apis",
+			"item": [
+				{
+					"name": "get item",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/5fa96743b88077075c1ce377",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"5fa96743b88077075c1ce377"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/allItems",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"allItems"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/orders/getOrders/All",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"orders",
+								"getOrders",
+								"All"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update item",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"itemName\":\"Fudge Brownie\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/items/edit/5fa96743b88077075c1ce377",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"edit",
+								"5fa96743b88077075c1ce377"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update deal",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dealName\":\"new deal 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/deals/update/5fad57ad9c8a380d402d20e4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"deals",
+								"update",
+								"5fad57ad9c8a380d402d20e4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add items",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n        \"itemName\":\"fudge browni\",\r\n        \"itemType\": \"sidelines\",\r\n        \"price\":\"250pkr\",\r\n        \"description\":\"bdtuwdoidmkwfk aaadddf\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/items/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get pizzas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/getpizza/pizza",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"getpizza",
+								"pizza"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get lasagna and pasta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/getlasagna&pasta/lasagnapasta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"getlasagna&pasta",
+								"lasagnapasta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get sandwiches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/getsandwiches/sandwich",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"getsandwiches",
+								"sandwich"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get beverages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/getbeverages/beverages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"getbeverages",
+								"beverages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get sidlines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/getsidlines/sideline",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"getsidlines",
+								"sideline"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get desert",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/getdesserts/dessert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"getdesserts",
+								"dessert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get salads",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/getdesserts/dessert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"getdesserts",
+								"dessert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "place order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"City\":\"atd\",\r\n    \"purchasedItems\":[\r\n        \"5fa963a9b88077075c1ce372\"\r\n    ],\r\n\"dealsPurchased\":[\r\n    \"5fad2df210e05c1fa0fdc09d\"\r\n],\r\n\r\n    \"email\":\"saba@gmail.com\",\r\n    \"address\":\"sjhfuwefweifwhfb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/orders/placeOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"orders",
+								"placeOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/items/delete/5fa96507b88077075c1ce375",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"items",
+								"delete",
+								"5fa96507b88077075c1ce375"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User SignIn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"saba@gmail.com\",\r\n    \"password\":\"test1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/signin/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"signin",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User SignUP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Saba\",\r\n    \"email\":\"saba@gmail.com\",\r\n    \"password\":\"test1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/signup/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"signup",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add deals",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dealType\":\"Lunch\",\r\n    \"dealName\":\"deal 1\",\r\n    \"items\":[\r\n        \"5fa96743b88077075c1ce377\",\r\n        \"5fa9638bb88077075c1ce371\",\r\n        \"5fa95e33278c1320f8e17cee\"\r\n        \r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/deals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"deals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all deals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/deals/getDeals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"deals",
+								"getDeals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get midnight Deals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/deals/getDeals/Midnight",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"deals",
+								"getDeals",
+								"Midnight"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get round the clock deal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/deals/getDeals/RoundTheClock",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"deals",
+								"getDeals",
+								"RoundTheClock"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get lunch deals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/deals/getDeals/Lunch",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"deals",
+								"getDeals",
+								"Lunch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single deal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/deals/single/5fad57ad9c8a380d402d20e4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"deals",
+								"single",
+								"5fad57ad9c8a380d402d20e4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete single deal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/orders/deleteOrder/5fad5286fe00e72a9836ebd9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"orders",
+								"deleteOrder",
+								"5fad5286fe00e72a9836ebd9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single Order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/orders/deleteOrder/5fad5286fe00e72a9836ebd9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"orders",
+								"deleteOrder",
+								"5fad5286fe00e72a9836ebd9"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
