@@ -549,10 +549,20 @@
 				{
 					"name": "delete single deal",
 					"request": {
-						"method": "GET",
+						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:9090/deals/delete/5fad57ad9c8a380d402d20e4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"deals",
+								"delete",
+								"5fad57ad9c8a380d402d20e4"
+							]
 						}
 					},
 					"response": []
@@ -611,12 +621,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/items/5fa96743b88077075c1ce377",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/items/5fa96743b88077075c1ce377",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"items",
 								"5fa96743b88077075c1ce377"
@@ -631,12 +642,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/items/allItems",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/items/allItems",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"items",
 								"allItems"
@@ -651,12 +663,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/orders/getOrders/All",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/orders/getOrders/All",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"orders",
 								"getOrders",
@@ -673,7 +686,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"itemName\":\"Fudge Brownie\"\r\n}",
+							"raw": "{\r\n    \"itemName\":\"Fudge Brownie1\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -681,12 +694,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9090/items/edit/5fa96743b88077075c1ce377",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/items/edit/5fa96743b88077075c1ce377",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"items",
 								"edit",
@@ -711,12 +725,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9090/deals/update/5fad57ad9c8a380d402d20e4",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/deals/update/5fad57ad9c8a380d402d20e4",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"deals",
 								"update",
@@ -733,7 +748,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \r\n        \"itemName\":\"fudge browni\",\r\n        \"itemType\": \"sidelines\",\r\n        \"price\":\"250pkr\",\r\n        \"description\":\"bdtuwdoidmkwfk aaadddf\"\r\n        }",
+							"raw": "{ \r\n        \"itemName\":\"diet coke\",\r\n        \"itemType\": \"beverages\",\r\n        \"price\":\"250pkr\",\r\n        \"description\":\"bdtuwdoidmkwfk aaadddf\",\r\n        \"size\":\"1.5L\"\r\n        }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -741,12 +756,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9090/items/add",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/items/add",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"items",
 								"add"
@@ -761,12 +777,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/items/getpizza/pizza",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/items/getpizza/pizza",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"items",
 								"getpizza",
@@ -782,12 +799,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/items/getlasagna&pasta/lasagnapasta",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/items/getlasagna&pasta/lasagnapasta",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"items",
 								"getlasagna&pasta",
@@ -803,12 +821,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/items/getsandwiches/sandwich",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/items/getsandwiches/sandwich",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"items",
 								"getsandwiches",
@@ -824,12 +843,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/items/getbeverages/beverages",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/items/getbeverages/beverages",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"items",
 								"getbeverages",
@@ -845,15 +865,16 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/items/getsidlines/sideline",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/items/getsidelines/sideline",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"items",
-								"getsidlines",
+								"getsidelines",
 								"sideline"
 							]
 						}
@@ -866,12 +887,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/items/getdesserts/dessert",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/items/getdesserts/dessert",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"items",
 								"getdesserts",
@@ -887,16 +909,17 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/items/getdesserts/dessert",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/items/getsalad/salads",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"items",
-								"getdesserts",
-								"dessert"
+								"getsalad",
+								"salads"
 							]
 						}
 					},
@@ -909,7 +932,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"City\":\"atd\",\r\n    \"purchasedItems\":[\r\n        \"5fa963a9b88077075c1ce372\"\r\n    ],\r\n\"dealsPurchased\":[\r\n    \"5fad2df210e05c1fa0fdc09d\"\r\n],\r\n\r\n    \"email\":\"saba@gmail.com\",\r\n    \"address\":\"sjhfuwefweifwhfb\"\r\n}",
+							"raw": "{\r\n    \"City\":\"isb\",\r\n    \"purchasedItems\":[\r\n        \"5fa963a9b88077075c1ce372\"\r\n    ],\r\n\"dealsPurchased\":[\r\n    \"5fad2df210e05c1fa0fdc09d\"\r\n],\r\n\r\n    \"email\":\"saba@gmail.com\",\r\n    \"address\":\"G10/3\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -917,12 +940,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9090/orders/placeOrder",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/orders/placeOrder",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"orders",
 								"placeOrder"
@@ -937,12 +961,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/items/delete/5fa96507b88077075c1ce375",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/items/delete/5fa96507b88077075c1ce375",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"items",
 								"delete",
@@ -959,7 +984,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"saba@gmail.com\",\r\n    \"password\":\"test1234567\"\r\n}",
+							"raw": "{\r\n   \"email\":\"saba123@gmail.com\",\r\n    \"password\":\"test1234567\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -967,12 +992,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9090/signin/",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/signin/",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"signin",
 								""
@@ -988,7 +1014,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Saba\",\r\n    \"email\":\"saba@gmail.com\",\r\n    \"password\":\"test1234567\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Saba\",\r\n    \"email\":\"saba123@gmail.com\",\r\n    \"password\":\"test1234567\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -996,12 +1022,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9090/signup/",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/signup/",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"signup",
 								""
@@ -1017,7 +1044,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"dealType\":\"Lunch\",\r\n    \"dealName\":\"deal 1\",\r\n    \"items\":[\r\n        \"5fa96743b88077075c1ce377\",\r\n        \"5fa9638bb88077075c1ce371\",\r\n        \"5fa95e33278c1320f8e17cee\"\r\n        \r\n    ]\r\n}",
+							"raw": "{\r\n    \"dealType\":\"Lunch\",\r\n    \"dealName\":\"deal 3\",\r\n    \"items\":[\r\n        \"5fa96743b88077075c1ce377\",\r\n        \"5fa9638bb88077075c1ce371\",\r\n        \"5fa95e33278c1320f8e17cee\"\r\n        \r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1025,12 +1052,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9090/deals/add",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/deals/add",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"deals",
 								"add"
@@ -1045,12 +1073,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/deals/getDeals",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/deals/getDeals",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"deals",
 								"getDeals"
@@ -1065,12 +1094,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/deals/getDeals/Midnight",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/deals/getDeals/Midnight",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"deals",
 								"getDeals",
@@ -1086,12 +1116,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/deals/getDeals/RoundTheClock",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/deals/getDeals/RoundTheClock",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"deals",
 								"getDeals",
@@ -1107,12 +1138,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/deals/getDeals/Lunch",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/deals/getDeals/Lunch",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"deals",
 								"getDeals",
@@ -1128,12 +1160,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/deals/single/5fad57ad9c8a380d402d20e4",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/deals/single/5fad57ad9c8a380d402d20e4",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
 							"path": [
 								"deals",
 								"single",
@@ -1146,10 +1179,21 @@
 				{
 					"name": "delete single deal",
 					"request": {
-						"method": "GET",
+						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "https://californiapizza.herokuapp.com/deals/delete/5fad57ad9c8a380d402d20e4",
+							"protocol": "https",
+							"host": [
+								"californiapizza",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"deals",
+								"delete",
+								"5fad57ad9c8a380d402d20e4"
+							]
 						}
 					},
 					"response": []
@@ -1160,33 +1204,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9090/orders/deleteOrder/5fad5286fe00e72a9836ebd9",
-							"protocol": "http",
+							"raw": "https://californiapizza.herokuapp.com/orders/deleteOrder/5fad5286fe00e72a9836ebd9",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"californiapizza",
+								"herokuapp",
+								"com"
 							],
-							"port": "9090",
-							"path": [
-								"orders",
-								"deleteOrder",
-								"5fad5286fe00e72a9836ebd9"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "get single Order",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:9090/orders/deleteOrder/5fad5286fe00e72a9836ebd9",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "9090",
 							"path": [
 								"orders",
 								"deleteOrder",
