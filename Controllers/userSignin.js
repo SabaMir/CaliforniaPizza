@@ -4,12 +4,11 @@ import jwt from 'jsonwebtoken';
 import Model from '../Models/Model';
 
 const createToken = (user, res, next) => {
-	const { id, email, name, imageUrl } = user;
+	const { id, email, name } = user;
 	const payload = {
 		_id: id,
 		email,
 		name,
-		imageUrl,
 	};
 	console.log(payload);
 	// create a token
@@ -22,6 +21,7 @@ const createToken = (user, res, next) => {
 		(err, token) => {
 			// Error Create the Token
 			if (err) {
+				console.log(err);
 				res.status(500);
 				next(new Error('Unable to generate Token.'));
 			} else {
